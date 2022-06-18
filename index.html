@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <h1>Positive num check</h1>
+    <input type="number" />
+    <button type="button" name="button" onclick="isNumPos(event)">Submit</button>
+    <p id="answer1"></p>
+
+    <h1>Days to age</h1>
+    <input type="number" onblur="daysToAge(event)"/>
+    <!--For some reason a button here caused this to return 0 so onblur was used instead-->
+    <p id="answer2"></p>
+
+    <h1>Last name</h1>
+    <p>Enter names:</p>
+    <input type="text" name="nameArray" value="" />
+    <input type="text" name="nameArray" value="" />
+    <input type="text" name="nameArray" value="" />
+    <button type="button" name="button" onclick="getLastName()">Submit</button>
+    <p id="answer3"></p>
+
+    <h1>Positive array check</h1>
+    <p>Enter numbers:</p>
+    <input type="number" name="numArray" value="" />
+    <input type="number" name="numArray" value="" />
+    <input type="number" name="numArray" value="" />
+    <button type="button" name="button" onclick="posArray()">Submit</button>
+    <p id="answer4"></p>
+    
+</body>
+</html>
